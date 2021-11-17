@@ -1,3 +1,5 @@
+intspawn = random.randint(1,10)
+
 def applespawn(active_apple, x):
   apple.pu()
   active_apple.shape(apple_image)
@@ -59,4 +61,5 @@ def applespawn(active_apple, x):
       active_apple.ht()
     except IndexError:
       continue
+  applespawn(turtle, intspawn)
 
