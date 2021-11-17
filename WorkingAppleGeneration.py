@@ -16,7 +16,7 @@ def applespawn(active_apple, x):
   ycors.append(y1)
   print(x1)
   print(y1)
-  for i in range(10):
+  for i in range(x):
       TrueCon = False
       TrueCony = False
       print(i)
