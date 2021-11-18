@@ -45,7 +45,7 @@ turtle = apple
 applelist = [apple1, apple2, apple3, apple4, apple5, apple6]
 
 #-----functions-----
-intspawn = 50
+intspawn = 35
 
 def applespawn(active_apple, x):
   for apples in applelist1:
