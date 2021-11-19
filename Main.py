@@ -151,30 +151,32 @@ def applespawn(active_apple, x):
   global jeff
   def jeff():
       try:
-        wn.onkeypress(applemove1,letterused[0])
+          wn.onkeypress(applemove1,letterused[0])
+      except Exception:
+        asda='a'
+      try:  
+          wn.onkeypress(applemove2,letterused[1])
       except Exception:
         asda='a'
       try:
-        wn.onkeypress(applemove2,letterused[1])
+          wn.onkeypress(applemove3,letterused[2])
       except Exception:
         asda='a'
       try:
-        wn.onkeypress(applemove3,letterused[2])
+          wn.onkeypress(applemove4,letterused[3])
       except Exception:
         asda='a'
       try:
-        wn.onkeypress(applemove4,letterused[3])
+          wn.onkeypress(applemove5,letterused[4])
       except Exception:
         asda='a'
       try:
-        wn.onkeypress(applemove5,letterused[4])
+          wn.onkeypress(applemove6,letterused[5])
       except Exception:
         asda='a'
-      try:
-        wn.onkeypress(applemove6,letterused[5])
-      except Exception:
-        asda='a'
+
   jeff()
+  
 
 def applemove1():
   try:
@@ -184,6 +186,7 @@ def applemove1():
     applesuse[0].stamp()
     applesuse[0].ht()
     applesuse[0].goto(0,0)
+    wn.onkeypress(None, letterused[0])
     try:
       if applesuse[0].xcor() == 0 and applesuse[1].xcor() ==0 and applesuse[2].xcor() ==0 and applesuse[3].xcor() ==0 and applesuse[4].xcor() ==0 and applesuse[5].xcor() ==0:
         applespawn(turtle,intspawn)
@@ -223,6 +226,7 @@ def applemove2():
     applesuse[1].stamp()
     applesuse[1].ht()
     applesuse[1].goto(0,0)
+    wn.onkeypress(None, letterused[1])
     try:
       if applesuse[0].xcor() == 0 and applesuse[1].xcor() ==0 and applesuse[2].xcor() ==0 and applesuse[3].xcor() ==0 and applesuse[4].xcor() ==0 and applesuse[5].xcor() ==0:
         applespawn(turtle,intspawn)
@@ -262,6 +266,7 @@ def applemove3():
     applesuse[2].stamp()
     applesuse[2].ht()
     applesuse[2].goto(0,0)
+    wn.onkeypress(None, letterused[2])
     try:
       if applesuse[0].xcor() == 0 and applesuse[1].xcor() ==0 and applesuse[2].xcor() ==0 and applesuse[3].xcor() ==0 and applesuse[4].xcor() ==0 and applesuse[5].xcor() ==0:
         applespawn(turtle,intspawn)
@@ -300,6 +305,7 @@ def applemove4():
     applesuse[3].stamp()
     applesuse[3].ht()
     applesuse[3].goto(0,0)
+    wn.onkeypress(None, letterused[3])
     try:
       if applesuse[0].xcor() == 0 and applesuse[1].xcor() ==0 and applesuse[2].xcor() ==0 and applesuse[3].xcor() ==0 and applesuse[4].xcor() ==0 and applesuse[5].xcor() ==0:
         applespawn(turtle,intspawn)
@@ -338,6 +344,7 @@ def applemove5():
     applesuse[4].stamp()
     applesuse[4].ht()
     applesuse[4].goto(0,0)
+    wn.onkeypress(None, letterused[4])
     try:
       if applesuse[0].xcor() == 0 and applesuse[1].xcor() ==0 and applesuse[2].xcor() ==0 and applesuse[3].xcor() ==0 and applesuse[4].xcor() ==0 and applesuse[5].xcor() ==0:
         applespawn(turtle,intspawn)
@@ -377,6 +384,7 @@ def applemove6():
     applesuse[5].stamp()
     applesuse[5].ht()
     applesuse[5].goto(0,0)
+    wn.onkeypress(None, letterused[5])
     try:
       if applesuse[0].xcor() == 0 and applesuse[1].xcor() ==0 and applesuse[2].xcor() ==0 and applesuse[3].xcor() ==0 and applesuse[4].xcor() ==0 and applesuse[5].xcor() ==0:
         applespawn(turtle,intspawn)
